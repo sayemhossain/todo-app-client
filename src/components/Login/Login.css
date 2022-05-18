@@ -1,0 +1,15 @@
+.login {
+  box-shadow: 10px 10px 15px #cbced1, -10px -10px 15px #cbced1;
+  border-radius: 10px;
+}
+.login input {
+  box-shadow: inset 8px 8px 15px #f1f2f3,
+    inset -8px -8px 15px rgb(253, 250, 250);
+}
+.signup-link {
+  text-decoration: none;
+  color: rgb(180, 117, 0);
+}
+.signup-link:hover {
+  color: rgb(180, 117, 0);
+}
