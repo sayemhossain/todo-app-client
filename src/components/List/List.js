@@ -31,7 +31,7 @@ const List = ({ todo }) => {
   };
   return (
     <div>
-      <div class="card" style={{ height: "15rem" }}>
+      <div class="card">
         <div class="card-body">
           <h6 class="card-title text-uppercase">{name}</h6>
           <p className={style ? "card-text" : "edit"}>{description}</p>
