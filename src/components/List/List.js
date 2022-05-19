@@ -31,9 +31,9 @@ const List = ({ todo }) => {
   };
   return (
     <div>
-      <div class="card">
+      <div class="card" style={{ height: "15rem" }}>
         <div class="card-body">
-          <h5 class="card-title">{name}</h5>
+          <h6 class="card-title text-uppercase">{name}</h6>
           <p className={style ? "card-text" : "edit"}>{description}</p>
           <button
             onClick={() => {

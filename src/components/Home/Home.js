@@ -35,9 +35,9 @@ const Home = () => {
   return (
     <div>
       <div className="container py-5">
-        <div className="bg-secondary py-3">
+        <div className="bg-light py-3">
           <h4 className="text-uppercase text-center">Todo app</h4>
-          <div className="w-50 mx-auto py-2 px-3">
+          <div className="w-50 form-container mx-auto py-2 px-3">
             <form action="" onSubmit={handleList}>
               <div className="mb-3">
                 <label for="name" className="form-label">
@@ -47,7 +47,7 @@ const Home = () => {
                   type="text"
                   className="form-control"
                   id="name"
-                  placeholder="enter your list"
+                  placeholder="enter your list name"
                 />
               </div>
               <div>
@@ -65,14 +65,16 @@ const Home = () => {
                 ></textarea>
               </div>
               <div className="text-center pt-4  ">
-                <button className="btn btn-success">Add to list</button>
+                <button className="btn btn-success text-uppercase">
+                  Add to List
+                </button>
               </div>
             </form>
           </div>
         </div>
         <div>
-          <h5 className="text-uppercase mt-5">Todo List</h5>
-          <div className="list-container p-4 text-center">
+          <h5 className="text-uppercase mt-5 text-danger">Todo List</h5>
+          <div className="list-container p-3 text-center">
             {todos.map((todo) => (
               <List key={todo._id} todo={todo}></List>
             ))}
